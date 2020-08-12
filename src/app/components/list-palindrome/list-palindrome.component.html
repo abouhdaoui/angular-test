@@ -1,0 +1,20 @@
+<div class="container">
+  <div class="panel panel-primary">
+    <table class="table table-dark">
+      <thead>
+      <tr>
+        <th scope="col">label :</th>
+        <th scope="col">Is palindrome :</th>
+      </tr>
+      </thead>
+      <tbody *ngIf="map">
+      <tr *ngFor="let d of map | keyvalue">
+        <td>{{d.key}}</td>
+        <td [ngStyle]="{'color': d.value === 'OK' ? 'green' : 'red'}">
+            {{d.value}}
+        </td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
