@@ -6,7 +6,7 @@ const routes: Routes = [
   {path: 'start/:path',
     component: PalindromeComponent},
   {path: '',
-    redirectTo: '/start/test',
+    redirectTo: '/start',
     pathMatch: 'full'}
 ];
 

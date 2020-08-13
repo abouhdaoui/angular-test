@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {PalindromeService} from '../../services/palindrome.service';
-import {ActivatedRoute, Router, UrlSegment} from '@angular/router';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-palindrome',
